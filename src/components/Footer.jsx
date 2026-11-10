@@ -33,7 +33,6 @@ export default function Footer() {
           <div className="flex flex-wrap justify-center gap-6 text-xs sm:text-sm font-medium text-charcoal-600 dark:text-cream-200">
             <a href="#about" className="hover:text-peach-600 dark:hover:text-peach-400 transition-colors">About</a>
             <a href="#skills" className="hover:text-peach-600 dark:hover:text-peach-400 transition-colors">Skills</a>
-            <a href="#projects" className="hover:text-peach-600 dark:hover:text-peach-400 transition-colors">Projects</a>
             <a href="#timeline" className="hover:text-peach-600 dark:hover:text-peach-400 transition-colors">Journey</a>
             <a href="#blog" className="hover:text-peach-600 dark:hover:text-peach-400 transition-colors">Highlights</a>
             <a href="#contact" className="hover:text-peach-600 dark:hover:text-peach-400 transition-colors">Contact</a>

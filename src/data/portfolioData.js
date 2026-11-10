@@ -55,9 +55,9 @@ export const portfolioData = {
   // Quick Highlight Numbers
   stats: [
     { label: "Year of Study", value: "1st", sublabel: "B.Tech CSE (AI)" },
-    { label: "Projects Built", value: "4+", sublabel: "Web & ML prototypes" },
-    { label: "Technologies", value: "10+", sublabel: "Languages & Frameworks" },
-    { label: "Problem Solving", value: "50+", sublabel: "Coding Challenges" }
+    { label: "Specialization", value: "AI", sublabel: "Artificial Intelligence" },
+    { label: "Core Language", value: "Python", sublabel: "Problem Solving & Logic" },
+    { label: "Prompt Eng.", value: "Applied", sublabel: "Generative AI Workflows" }
   ],
 
   // Categorized Skills

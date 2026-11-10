@@ -86,10 +86,10 @@ export default function Hero() {
               {/* Action Buttons */}
               <div className="flex flex-wrap items-center gap-4 mb-8">
                 <a
-                  href="#projects"
+                  href="#skills"
                   className="px-6 py-3.5 rounded-full bg-charcoal-900 text-cream-50 dark:bg-peach-400 dark:text-charcoal-900 font-medium text-sm inline-flex items-center gap-2 hover:bg-charcoal-800 dark:hover:bg-peach-300 transition-all shadow-md hover:shadow-lg active:scale-95 group"
                 >
-                  <span>View Projects</span>
+                  <span>Explore Skills</span>
                   <ArrowDown size={16} className="transition-transform group-hover:translate-y-0.5" />
                 </a>
 
