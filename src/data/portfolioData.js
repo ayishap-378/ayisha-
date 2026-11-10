@@ -64,24 +64,18 @@ export const portfolioData = {
   skills: [
     {
       category: "Languages",
-      description: "Core programming and scripting foundations",
+      description: "Core programming and problem solving foundations",
       items: [
-        { name: "Python", level: 85, highlight: "Preferred language for AI & algorithms" },
-        { name: "C Programming", level: 80, highlight: "Foundational college coursework & memory concepts" },
-        { name: "JavaScript (ES6+)", level: 75, highlight: "Modern asynchronous frontend development" },
-        { name: "HTML5 & CSS3", level: 90, highlight: "Semantic layout, accessibility & styling" },
-        { name: "SQL Basics", level: 70, highlight: "Relational database querying & schema design" }
+        { name: "Python", level: 85, highlight: "Primary programming language for problem solving & AI logic" },
+        { name: "Python (Data Structures & OOP)", level: 80, highlight: "Functions, object-oriented concepts, and clean coding" }
       ]
     },
     {
       category: "AI & Machine Learning",
-      description: "Data processing, algorithms, and AI exploration",
+      description: "Applied generative AI, prompting, and exploration",
       items: [
-        { name: "NumPy & Pandas", level: 75, highlight: "Data cleaning, arrays & exploratory data analysis" },
-        { name: "Scikit-Learn", level: 65, highlight: "Supervised classification & regression models" },
-        { name: "Neural Network Basics", level: 60, highlight: "Perceptrons, forward/backward propagation theory" },
-        { name: "Matplotlib & Seaborn", level: 70, highlight: "Statistical data visualization & plotting" },
-        { name: "Prompt Engineering", level: 85, highlight: "LLM agent integration and fine-tuned prompting" }
+        { name: "Prompt Engineering", level: 90, highlight: "Few-shot prompting, system instructions & structured reasoning" },
+        { name: "Generative AI Tools", level: 85, highlight: "Harnessing LLM workflows, ChatGPT, Claude & Gemini for productivity" }
       ]
     },
     {

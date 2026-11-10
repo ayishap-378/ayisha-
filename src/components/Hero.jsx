@@ -202,10 +202,7 @@ export default function Hero() {
                         Python
                       </span>
                       <span className="px-2 py-0.5 rounded-md text-[10px] font-semibold bg-peach-50 dark:bg-charcoal-800 text-charcoal-700 dark:text-peach-200 border border-peach-200/60 dark:border-charcoal-700">
-                        Machine Learning
-                      </span>
-                      <span className="px-2 py-0.5 rounded-md text-[10px] font-semibold bg-peach-50 dark:bg-charcoal-800 text-charcoal-700 dark:text-peach-200 border border-peach-200/60 dark:border-charcoal-700">
-                        React
+                        Prompt Engineering
                       </span>
                       <span className="ml-auto text-[10px] font-mono font-medium text-peach-600 dark:text-peach-400 flex items-center gap-1">
                         <MapPin size={10} />
@@ -244,7 +241,7 @@ export default function Hero() {
                 </div>
                 <div>
                   <p className="text-[9px] uppercase font-bold tracking-wider text-charcoal-400">Problem Solving</p>
-                  <p className="text-xs font-bold text-charcoal-800 dark:text-cream-100">Python & Web Dev</p>
+                  <p className="text-xs font-bold text-charcoal-800 dark:text-cream-100">Python & Prompting</p>
                 </div>
               </motion.div>
             </div>
