@@ -24,6 +24,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# Antigravity & scratch
-.gemini
+# Firebase
+.firebase/
+.firebaserc.local
 
