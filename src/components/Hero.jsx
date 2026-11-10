@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, Download, Sparkles, MapPin, GraduationCap, Github, Linkedin, Mail, Code2, ArrowUpRight } from 'lucide-react';
+import { ArrowDown, Download, Sparkles, MapPin, GraduationCap, Github, Linkedin, Mail, Code2, Brain, CheckCircle2, ArrowUpRight } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
 const iconMap = {
@@ -47,7 +47,7 @@ export default function Hero() {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="lg:col-span-7 z-10 lg:-mr-12"
+            className="lg:col-span-7 z-10 lg:-mr-6"
           >
             {/* Elegant Peach Card */}
             <motion.div
@@ -133,59 +133,118 @@ export default function Hero() {
             variants={itemVariants}
             initial="hidden"
             animate="visible"
-            className="lg:col-span-5 relative mt-6 lg:mt-0 flex justify-center"
+            className="lg:col-span-5 relative mt-10 lg:mt-0 flex justify-center z-20"
           >
             {/* Visual Frame */}
-            <div className="relative w-full max-w-[420px]">
-              {/* Decorative Background Accent Shape */}
-              <div className="absolute -inset-4 bg-gradient-to-tr from-peach-300/60 to-peach-100/40 dark:from-peach-900/30 dark:to-charcoal-800 rounded-[2.5rem] -rotate-3 transform -z-10" />
+            <div className="relative w-full max-w-[430px]">
+              {/* Decorative Background Ambient Glow */}
+              <div className="absolute -inset-4 bg-gradient-to-tr from-peach-300/60 via-peach-200/40 to-peach-400/50 dark:from-peach-900/40 dark:via-charcoal-800 dark:to-peach-600/20 rounded-[2.8rem] -rotate-2 transform -z-10 blur-sm" />
+              <div className="absolute -inset-1 bg-gradient-to-br from-peach-200/60 to-peach-400/30 dark:from-charcoal-700/60 dark:to-peach-900/30 rounded-[2.5rem] transform -z-10" />
 
               {/* Main Image Container */}
-              <div className="relative overflow-hidden rounded-[2rem] border-2 border-white dark:border-charcoal-700 shadow-soft-lg bg-peach-200 aspect-[4/5]">
+              <div className="relative overflow-hidden rounded-[2.5rem] border-2 border-white/90 dark:border-charcoal-700 shadow-2xl bg-cream-100 dark:bg-charcoal-800 aspect-[3.5/5] group">
+                
+                {/* Ayisha's Campus Portrait */}
                 <img
                   src={personal.avatarUrl}
                   alt="Ayisha P - Computer Science (AI) Student"
-                  className="w-full h-full object-cover object-[center_20%] hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-[center_16%] filter saturate-[1.02] contrast-[1.02] group-hover:scale-105 transition-transform duration-700"
                   loading="eager"
                 />
 
-                {/* Soft gradient overlay at bottom */}
-                <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-charcoal-900/60 to-transparent pointer-events-none" />
+                {/* Subtle Cinematic Vignette Gradients */}
+                <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-charcoal-900/45 via-charcoal-900/15 to-transparent pointer-events-none" />
+                <div className="absolute inset-x-0 bottom-0 h-52 bg-gradient-to-t from-charcoal-900/85 via-charcoal-900/40 to-transparent pointer-events-none" />
 
-                {/* Bottom Overlay Label */}
-                <div className="absolute bottom-5 left-5 right-5 text-white">
-                  <p className="font-script text-2xl text-peach-200">Ayisha P</p>
-                  <p className="text-xs text-white/90 font-light">Computer Science Engineering (AI)</p>
+                {/* Top Viewport HUD Overlay Bar */}
+                <div className="absolute top-4 inset-x-4 flex items-center justify-between z-20 pointer-events-none">
+                  {/* Status Indicator Pill */}
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-charcoal-900/65 backdrop-blur-md border border-white/20 text-white text-[11px] font-medium shadow-md">
+                    <span className="relative flex h-2 w-2">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+                    </span>
+                    <span className="tracking-wide">Available for Internships</span>
+                  </div>
+
+                  {/* Top Right HUD Badge */}
+                  <div className="p-2 rounded-full bg-charcoal-900/65 backdrop-blur-md border border-white/20 text-peach-300 shadow-md">
+                    <Sparkles size={14} />
+                  </div>
                 </div>
+
+                {/* Modern UI/UX Glassmorphic Profile Card Overlay */}
+                <div className="absolute bottom-3 inset-x-3 sm:bottom-4 sm:inset-x-4 z-20">
+                  <div className="p-4 rounded-2xl bg-white/85 dark:bg-charcoal-900/90 backdrop-blur-xl border border-white/70 dark:border-white/10 shadow-xl transition-all duration-300 group-hover:bg-white/95 dark:group-hover:bg-charcoal-900/95">
+                    
+                    {/* Header Row: Name & Student Badge */}
+                    <div className="flex items-center justify-between gap-2 mb-1.5">
+                      <div className="flex items-center gap-1.5">
+                        <h3 className="font-serif font-bold text-lg sm:text-xl text-charcoal-900 dark:text-cream-50 leading-tight">
+                          Ayisha P
+                        </h3>
+                        <CheckCircle2 size={16} className="text-peach-600 dark:text-peach-400 fill-peach-100 dark:fill-charcoal-800" />
+                      </div>
+                      <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase bg-peach-200/90 dark:bg-peach-900/60 text-charcoal-900 dark:text-peach-200 border border-peach-300/60 dark:border-peach-700/60">
+                        1st Year
+                      </span>
+                    </div>
+
+                    {/* Subtitle Row: Course & College */}
+                    <p className="text-xs font-medium text-charcoal-600 dark:text-cream-200/90 flex items-center gap-1.5 mb-2.5">
+                      <GraduationCap size={14} className="text-peach-500 flex-shrink-0" />
+                      <span className="truncate">B.Tech CSE (AI) • Thejus Engineering College</span>
+                    </p>
+
+                    {/* Micro Tech Stack Badges Row */}
+                    <div className="flex flex-wrap items-center gap-1.5 pt-2 border-t border-peach-100/80 dark:border-charcoal-700/80">
+                      <span className="px-2 py-0.5 rounded-md text-[10px] font-semibold bg-peach-50 dark:bg-charcoal-800 text-charcoal-700 dark:text-peach-200 border border-peach-200/60 dark:border-charcoal-700">
+                        Python
+                      </span>
+                      <span className="px-2 py-0.5 rounded-md text-[10px] font-semibold bg-peach-50 dark:bg-charcoal-800 text-charcoal-700 dark:text-peach-200 border border-peach-200/60 dark:border-charcoal-700">
+                        Machine Learning
+                      </span>
+                      <span className="px-2 py-0.5 rounded-md text-[10px] font-semibold bg-peach-50 dark:bg-charcoal-800 text-charcoal-700 dark:text-peach-200 border border-peach-200/60 dark:border-charcoal-700">
+                        React
+                      </span>
+                      <span className="ml-auto text-[10px] font-mono font-medium text-peach-600 dark:text-peach-400 flex items-center gap-1">
+                        <MapPin size={10} />
+                        Thrissur, KL
+                      </span>
+                    </div>
+
+                  </div>
+                </div>
+
               </div>
 
               {/* Floating Badge 1 - Top Right */}
               <motion.div
-                animate={{ y: [0, -6, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute -top-4 -right-4 bg-white/95 dark:bg-charcoal-800/95 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-peach-300/80 dark:border-charcoal-600 shadow-lg flex items-center gap-2"
+                animate={{ y: [0, -8, 0] }}
+                transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut' }}
+                className="absolute -top-3 -right-3 sm:-top-5 sm:-right-5 z-30 bg-white/95 dark:bg-charcoal-800/95 backdrop-blur-md px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-2xl border border-peach-300/80 dark:border-charcoal-600 shadow-xl flex items-center gap-2.5"
               >
-                <div className="p-1.5 rounded-lg bg-peach-100 dark:bg-charcoal-700 text-peach-600 dark:text-peach-300">
-                  <Sparkles size={16} />
+                <div className="p-1.5 rounded-xl bg-peach-100 dark:bg-charcoal-700 text-peach-600 dark:text-peach-300">
+                  <Brain size={16} />
                 </div>
                 <div>
-                  <p className="text-[10px] uppercase font-semibold tracking-wider text-charcoal-400 dark:text-charcoal-400">Specialization</p>
+                  <p className="text-[9px] uppercase font-bold tracking-wider text-charcoal-400">Specialization</p>
                   <p className="text-xs font-bold text-charcoal-800 dark:text-cream-100">Artificial Intelligence</p>
                 </div>
               </motion.div>
 
               {/* Floating Badge 2 - Bottom Left */}
               <motion.div
-                animate={{ y: [0, 6, 0] }}
-                transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-                className="absolute -bottom-5 -left-4 bg-white/95 dark:bg-charcoal-800/95 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-peach-300/80 dark:border-charcoal-600 shadow-lg flex items-center gap-3"
+                animate={{ y: [0, 8, 0] }}
+                transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
+                className="absolute -bottom-3 -left-3 sm:-bottom-5 sm:-left-5 z-30 bg-white/95 dark:bg-charcoal-800/95 backdrop-blur-md px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-2xl border border-peach-300/80 dark:border-charcoal-600 shadow-xl flex items-center gap-2.5"
               >
-                <div className="w-8 h-8 rounded-full bg-peach-200 dark:bg-charcoal-700 flex items-center justify-center text-peach-600 dark:text-peach-300 font-serif font-bold text-sm">
-                  1st
+                <div className="p-1.5 rounded-xl bg-peach-100 dark:bg-charcoal-700 text-peach-600 dark:text-peach-300">
+                  <Code2 size={16} />
                 </div>
                 <div>
-                  <p className="text-[10px] uppercase font-semibold tracking-wider text-charcoal-400">Academic Standing</p>
-                  <p className="text-xs font-bold text-charcoal-800 dark:text-cream-100">Year Student • Thejus</p>
+                  <p className="text-[9px] uppercase font-bold tracking-wider text-charcoal-400">Problem Solving</p>
+                  <p className="text-xs font-bold text-charcoal-800 dark:text-cream-100">Python & Web Dev</p>
                 </div>
               </motion.div>
             </div>
