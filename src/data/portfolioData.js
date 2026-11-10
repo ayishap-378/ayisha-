@@ -78,17 +78,7 @@ export const portfolioData = {
         { name: "Generative AI Tools", level: 85, highlight: "Harnessing LLM workflows, ChatGPT, Claude & Gemini for productivity" }
       ]
     },
-    {
-      category: "Web Development",
-      description: "Responsive interfaces and user experience design",
-      items: [
-        { name: "React.js", level: 80, highlight: "Component lifecycle, state management & hooks" },
-        { name: "Tailwind CSS", level: 85, highlight: "Modern utility-first styling & dark mode" },
-        { name: "Responsive UI/UX", level: 90, highlight: "Mobile-first layouts & micro-interactions" },
-        { name: "REST APIs", level: 70, highlight: "Fetching, consuming and displaying asynchronous data" },
-        { name: "Framer Motion", level: 75, highlight: "Smooth page reveals and interactive physics" }
-      ]
-    },
+
     {
       category: "Tools & Platforms",
       description: "Development workflow and productive utilities",
